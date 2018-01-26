@@ -83,7 +83,8 @@ function cloneMenuItem (item) {
     'submenu',
     'commandDetail',
     'role',
-    'accelerator'
+    'accelerator',
+    'position'
   )
   if (item.submenu != null) {
     item.submenu = item.submenu.map(submenuItem => cloneMenuItem(submenuItem))
